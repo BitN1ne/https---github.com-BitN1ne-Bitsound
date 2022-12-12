@@ -89,6 +89,25 @@ header .up .login a button {
   border-radius: 5px;
   text-align: center;
 }
+header .up .login .divider-vertical {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  color: grey;
+  text-align: center;
+  margin: 0 32px;
+  line-height: 10pt;
+}
+header .up .login .cart {
+  display: inline-block;
+  height: 36px;
+  width: 60px;
+  border-radius: 20px;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 header .up a img {
   height: 40px;
   width: 40px;
@@ -161,35 +180,7 @@ header .upbrd {
   z-index: 1;
   border-bottom: 1px solid grey;
 }
-
-.divider-vertical {
-  display: inline-block;
-  width: 1px;
-  height: 16px;
-  color: grey;
-  text-align: center;
-  margin: 0 32px;
-  line-height: 10pt;
-}
-
-.cart {
-  display: inline-block;
-  height: 36px;
-  width: 60px;
-  border-radius: 20px;
-  transition: 0.3s;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.cart:hover {
-  background: #282828;
-  height: 36px;
-  cursor: pointer;
-}
-
-.down {
+header .down {
   margin-top: 56px;
   display: inline-block;
   width: 100%;
@@ -198,16 +189,14 @@ header .upbrd {
   z-index: 2;
   background: #141414;
 }
-
-.downmid {
+header .down .downmid {
   width: 80%;
   height: 38px;
   margin-top: 10px;
   display: inline-block;
   margin-left: 10%;
 }
-
-.downmid > a > div {
+header .down .downmid a div {
   height: 100%;
   display: inline-block;
   margin-right: 40pt;
@@ -215,9 +204,14 @@ header .upbrd {
   transition: 0.3s;
   border-bottom: 1px solid grey;
 }
-
-.downmid > a > div:hover {
+header .down .downmid a div div:hover {
   border-bottom: 1px solid white;
+}
+
+.cart:hover {
+  background: #282828;
+  height: 36px;
+  cursor: pointer;
 }
 
 .wrapper {
